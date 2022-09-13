@@ -84,9 +84,9 @@ limitations under the License.
 <amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
 <script type="application/json">
 "triggers": {
-  "viewMenu": {
+  "anchorClicks": {
     "on": "click",
-    "selector": "a[href^='menu.amp.html']",
+    "selector": "a",
     "request": "ga4Event",
     "vars": {
       "ga4_event_name": "view_menu_click"
