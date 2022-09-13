@@ -59,15 +59,15 @@ limitations under the License.
                 "PERFORMANCE_TIMING_TRACKING": false
     },
 	"triggers": {
-  "mailtos": {
+  "view_menu": {
     "on": "click",
-    "selector": "a",
+    "selector": "#viewMenu",
     "request": "ga4Event",
     "vars": {
-      "ga4_event_name": "outgoing_click"
+      "ga4_event_name": "view_menu_click"
     },
     "extraUrlParams": {
-         "event__str_outgoing_click_type": "mailto"
+         "event__str_outgoing_click_type": "view_menu"
     }       
   }
 } 
