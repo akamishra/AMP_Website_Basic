@@ -59,11 +59,12 @@ limitations under the License.
                 "PERFORMANCE_TIMING_TRACKING": false
     },
 "triggers": {
-    "enabled": true,
-    "on": "visible",
+   "triggers": {
+  "page_view": {
+    "on": "visible",    
     "request": "ga4Event",
     "vars": {
-        "ga4_event_name": "page_view"
+      "ga4_event_name": "page_view"
     },
     "extraUrlParams": {
         "event__str_breaking": "test", 
