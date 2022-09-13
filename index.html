@@ -57,7 +57,21 @@ limitations under the License.
                 "GOOGLE_CONSENT_ENABLED": false,
                 "WEBVITALS_TRACKING": false,
                 "PERFORMANCE_TIMING_TRACKING": false
-    }
+    },
+	"triggers": {
+  "mailtos": {
+    "on": "click",
+    "selector": "a",
+    "request": "ga4Event",
+    "vars": {
+      "ga4_event_name": "outgoing_click"
+    },
+    "extraUrlParams": {
+         "event__str_outgoing_click_type": "mailto"
+    }       
+  }
+} 
+	
 }
 </script>
 </amp-analytics>
@@ -121,24 +135,6 @@ limitations under the License.
     <footer class="absolute left-0 right-0 bottom-0">
       <a class="ampstart-btn inline-block ampstart-fullpage-hero-cta h5 m3 text-decoration-none" href="menu.amp.html" id = "viewMenu">View Menu</a>
     </footer>
-	
-	<amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
-<script type="application/json">
-"triggers": {
-  "anchorClicks": {
-    "on": "click",
-    "selector": "#viewMenu",
-    "request": "ga4Event",
-    "vars": {
-      "ga4_event_name": "view_menu_click"
-    },
-    "extraUrlParams": {
-         "event__str_outgoing_click_type": "mailto"
-    }       
-  }
-} 
-</script>
-</amp-analytics>
 
     </figcaption>
   </figure>
