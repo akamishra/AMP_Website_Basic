@@ -47,7 +47,7 @@ limitations under the License.
 <body>
 
 
-<amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
+<amp-analytics type="googleanalytics" config="GA4Config" data-credentials="include">
 <script type="application/json">
 {
     "vars": {
@@ -57,28 +57,22 @@ limitations under the License.
                 "GOOGLE_CONSENT_ENABLED": false,
                 "WEBVITALS_TRACKING": false,
                 "PERFORMANCE_TIMING_TRACKING": false
-    },
-"triggers": {
-   "triggers": {
-  "page_view": {
-    "on": "visible",    
+    },	
+	"triggers": {
+  "view_menu": {
+    "on": "click",
+    "selector": "#viewMenu",
     "request": "ga4Event",
     "vars": {
-      "ga4_event_name": "page_view"
+      "ga4_event_name": "view_menu_click"
     },
     "extraUrlParams": {
-        "event__str_breaking": "test", 
-        "event__str_channelType": "test",
-		"event__str_contentPageTitle": "test",
-		"event__str_contentPageType": "test",
-		"event__str_contentPublishedDate": "test",
-		"event__str_contentRelatedArticleIDs": "test",
-		"event__str_contentTags": "test",
-		"event__str_contentType": "test",
-		"event__str_pageType":"test",
-		"event__str_AMP_Page": "test"
-    }
-} 	
+         "event__str_outgoing_click_type": "view_menu",
+		 "user__str_test_user_id":"u1000"
+    }       
+  }
+} 
+	
 }
 </script>
 </amp-analytics>
