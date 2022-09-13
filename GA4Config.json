@@ -47,7 +47,7 @@
 		"custom_pageview": {
     "enabled": true,
     "on": "visible",
-    "request": "ga4Event",
+    "request": "ga4Event"
     "vars": {
         "ga4_event_name": "page_view"
     },
