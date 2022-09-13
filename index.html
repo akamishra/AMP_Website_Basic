@@ -81,6 +81,24 @@ limitations under the License.
     </ul>
   </nav>
 
+<amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
+<script type="application/json">
+"triggers": {
+  "viewMenu": {
+    "on": "click",
+    "selector": "a[href^='menu.amp.html']",
+    "request": "ga4Event",
+    "vars": {
+      "ga4_event_name": "view_menu_click"
+    },
+    "extraUrlParams": {
+         "event__str_outgoing_click_type": "mailto"
+    }       
+  }
+} 
+</script>
+</amp-analytics>
+
 
 
 <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
