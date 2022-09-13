@@ -36,23 +36,6 @@ limitations under the License.
 <script custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js" async=""></script>
 <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
 
-<amp-analytics type="googleanalytics" config="GA4Config.json" data-credentials="include">
-<script type="application/json">
-{
-    "vars": {
-                "GA4_MEASUREMENT_ID": "G-ST1Y7H8HF4",
-                "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
-                "DEFAULT_PAGEVIEW_ENABLED": true,    
-                "GOOGLE_CONSENT_ENABLED": false,
-                "WEBVITALS_TRACKING": false,
-                "PERFORMANCE_TIMING_TRACKING": false,
-                "SEND_DOUBLECLICK_BEACON": false
-    }
-}
-</script>
-</amp-analytics> 
-
-
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato" rel="stylesheet">
 
   <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -61,6 +44,21 @@ limitations under the License.
 </head>
 <body>
 
+
+<amp-analytics type="googleanalytics" config="https://amp.analytics-debugger.com/ga4.json" data-credentials="include">
+<script type="application/json">
+{
+    "vars": {
+                "GA4_MEASUREMENT_ID": "G-ST1Y7H8HF4",
+                "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
+                "DEFAULT_PAGEVIEW_ENABLED": true,    
+                "GOOGLE_CONSENT_ENABLED": false,
+                "WEBVITALS_TRACKING": false,
+                "PERFORMANCE_TIMING_TRACKING": false
+    }
+}
+</script>
+</amp-analytics>
 
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
