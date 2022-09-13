@@ -61,7 +61,7 @@
 		"event__str_contentTags": "{{dynamic}}",
 		"event__str_contentType": "{{dynamic}}",
 		"event__str_pageType": "{{dynamic}}",
-		"event__str_AMP_Page": "{{dynamic}}"
+		"event__str_AMP_Page": "{{dynamic}}",		
     }
 }, 	
 		
