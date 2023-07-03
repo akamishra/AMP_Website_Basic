@@ -47,34 +47,19 @@ limitations under the License.
 <body>
 
 
-<amp-analytics type="googleanalytics" config="GA4Config.json" data-credentials="include">
+ <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<amp-analytics type="gtag" data-credentials="include">
 <script type="application/json">
 {
-    "vars": {
-                "GA4_MEASUREMENT_ID": "G-ST1Y7H8HF4",
-                "GA4_ENDPOINT_HOSTNAME": "www.google-analytics.com",
-                "DEFAULT_PAGEVIEW_ENABLED": false,    	
-                "GOOGLE_CONSENT_ENABLED": false,
-                "WEBVITALS_TRACKING": false,
-                "PERFORMANCE_TIMING_TRACKING": false
-    },
-"triggers": {
-  "mailtos": {
-    "on": "click",
-    "selector": "#viewMenu",
-    "request": "ga4Event",
-    "vars": {
-      "ga4_event_name": "view_menu_click"
-    },
-    "extraUrlParams": {
-         "event__str_click_type": "test"
-    }       
+  "vars" : {
+    "gtag_id": "G-97WL7NM5GW",
+    "config" : {
+      "G-97WL7NM5GW": { "groups": "default" }
+    }
   }
-} 
-	
 }
 </script>
-</amp-analytics>
+</amp-analytics>	
 
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
